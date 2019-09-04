@@ -3,7 +3,7 @@ var path = require('path')
 var compression = require('compression')
 
 var app = express()
-var port = process.env.PORT | 3000
+var port = process.env.PORT || 3000
 app.listen(port)
 
 app.set('views', path.join(__dirname, 'views'))
