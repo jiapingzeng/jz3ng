@@ -17,6 +17,8 @@ import Projects from "@/components/Home/Projects.vue"
 import Hobbies from "@/components/Home/Hobbies.vue"
 import Contact from "@/components/Home/Contact.vue"
 
+import "vue2-animate/dist/vue2-animate.min.css"
+
 export default {
   name: 'Home',
   components: {
