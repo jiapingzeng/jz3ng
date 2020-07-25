@@ -1,21 +1,42 @@
 <template>
   <div id="skills">
-    <h2>Skills</h2>
+    <div class="section-title">
+      <h3>My Skills</h3>
+    </div>
+    <div>
+      <h3>Software Engineering</h3>
+      <p></p>
+    </div>
+    <div>
+      <h3>Full-stack Web Development</h3>
+      <p></p>
+    </div>
+    <div>
+      <h3>Full-stack Web Development</h3>
+      <p></p>
+    </div>
+    <div>
+      <h3>Teamwork</h3>
+      <p>I work well both alone and in collaboration. In addition to working with a team at ServiceNow, I have received awards at multiple team hacakathons.</p>
+    </div>
+    <div>
+      <h3>Fast Learner</h3>
+      <p></p>
+    </div>
+    <div>
+      <h3>Bilingual</h3>
+      <p>I speak fluent English and Mandarin Chinese (and a little bit of French!).</p>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 #skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(#5e5e5e, #4d4d4d);
 }
 </style>
 
 <script>
 export default {
-  name: "Skills"
-}
+  name: "Skills",
+};
 </script>

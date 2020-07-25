@@ -1,21 +1,24 @@
 <template>
   <div id="contact">
-    <h2>Contact Me</h2>
+    <div class="section-title">
+      <h3>Contact Me</h3>
+    </div>
+  <div>
+    <ul>
+      <li><a href="mailto://me@jz3ng.com">me@jz3ng.com</a></li>
+      <li><a href="linkedin.com/in/jiapingzeng">jiapingzeng</a></li>
+    </ul>
+  </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 #contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(#5e5e5e, #4d4d4d);
 }
 </style>
 
 <script>
 export default {
-  name: "Contact"
-}
+  name: "Contact",
+};
 </script>
