@@ -9,6 +9,14 @@
   </div>
 </template>
 
+<style scoped>
+.home>div:not(:first-child) {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+</style>
+
 <script>
 import Intro from "@/components/Home/Intro.vue"
 import About from "@/components/Home/About.vue"

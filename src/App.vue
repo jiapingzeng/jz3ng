@@ -25,6 +25,18 @@ body {
     margin-left: 16rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  #main-navbar {
+    display: none;
+  }
+
+  #app {
+    main {
+      margin: 0;
+    }
+  }
+}
 </style>
 
 <script>
@@ -32,7 +44,7 @@ import Navbar from "@/components/Navbar.vue";
 
 export default {
   components: {
-    Navbar
-  }
+    Navbar,
+  },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav id="main-navbar" class="navbar">
     <ul class="navbar-nav" v-scroll-spy-active v-scroll-spy-link>
       <li class="nav-item">
         <a href="#intro" class="nav-link">
@@ -34,12 +34,20 @@
       <div class="nav-socials">
         <span>
           <a href="https://www.linkedin.com/in/jiapingzeng" class="social-icon si-linkedin">
-            <i><fa-icon :icon="['fab', 'linkedin-in']" /></i>
-            <i><fa-icon :icon="['fab', 'linkedin-in']" /></i>
+            <i>
+              <fa-icon :icon="['fab', 'linkedin-in']" />
+            </i>
+            <i>
+              <fa-icon :icon="['fab', 'linkedin-in']" />
+            </i>
           </a>
           <a href="https://github.com/jiapingzeng" class="social-icon si-github">
-            <i><fa-icon :icon="['fab', 'github']" /></i>
-            <i><fa-icon :icon="['fab', 'github']" /></i>
+            <i>
+              <fa-icon :icon="['fab', 'github']" />
+            </i>
+            <i>
+              <fa-icon :icon="['fab', 'github']" />
+            </i>
           </a>
         </span>
       </div>
@@ -87,7 +95,8 @@
       color: $nav-text-primary;
     }
 
-    .nav-item:not(:first-child):hover, .nav-item:not(:first-child).active {
+    .nav-item:not(:first-child):hover,
+    .nav-item:not(:first-child).active {
       border-right: 3px $nav-text-theme solid;
       background-color: $nav-bg-secondary;
       color: $nav-text-primary;
@@ -155,6 +164,6 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 library.add(faLinkedinIn, faGithub);
 
 export default {
-  name: "Navbar"
+  name: "Navbar",
 };
 </script>

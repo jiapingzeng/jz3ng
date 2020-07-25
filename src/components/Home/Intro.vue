@@ -19,6 +19,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  max-height: 800px;
   background: linear-gradient(#686868, #363636);
   color: #d8d8d8;
 
@@ -28,7 +29,7 @@
 
   .intro-bottom {
     position: absolute;
-    bottom: 5vh;
+    top: min(90vh, 700px);
 
     i {
       font-size: 40px;

@@ -6,11 +6,6 @@
 
 <style lang="scss" scoped>
 #hobbies {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(#5e5e5e, #4d4d4d);
 }
 </style>
 
