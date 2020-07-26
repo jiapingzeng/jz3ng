@@ -24,7 +24,7 @@
       <div>
         <h5 class="subsection-title">Programmer</h5>
         <p>
-          I am fluent in many programming languages, most notably Javascript, Java and C/C++. I have a good amount of projects both from classes and outside of classes.
+          I am fluent in many programming languages, most notably Javascript, Java and C/C++. I have projects both from classes and outside of classes.
           <a
             href="#projects"
           >Check them out!</a>
@@ -33,7 +33,7 @@
       <div>
         <h5 class="subsection-title">Tinkerer</h5>
         <p>
-          I am a hands-on learner and love finding personal projects in my spare time. My most recent ones include a DIY electric skateboard.
+          I am a hands-on learner and love finding personal projects in my spare time. My most recent project is a DIY electric skateboard that goes up to 35 miles per hour.
           <a
             href="#hobbies"
           >Read more about my hobbies!</a>
@@ -57,14 +57,14 @@
     img {
       width: 70%;
       max-width: 280px;
-      border: 3px $text-primary solid;
+      border: 1px white solid;
+      box-shadow: 0 0 10px lightgrey;
       border-radius: 50%;
     }
   }
 
   .about-tldr {
     grid-column: span 2;
-    margin: 0 10px;
 
     h4 {
       text-transform: uppercase;

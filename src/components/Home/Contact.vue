@@ -1,37 +1,107 @@
 <template>
   <div id="contact">
-    <div class="section-title-container">
-      <h3 class="section-title">Contact Me</h3>
+    <div class="contact-card">
+      <div class="card-name-container">
+        <h3>Jiaping Zeng</h3>
+      </div>
+      <div class="card-info-container">
+        <div>
+          <p>Palo Alto, California</p>
+          <p>(650) 665-0255</p>
+          <p>
+            <a href="mailto://me@jz3ng.com">me@jz3ng.com</a>
+          </p>
+        </div>
+      </div>
     </div>
-    <ul>
-      <li>
-        <i>
-          <fa-icon :icon="['fas', 'envelope']" />
-        </i>
-        <a href="mailto://me@jz3ng.com">me@jz3ng.com</a>
-      </li>
-      <li>
-        <i>
-          <fa-icon :icon="['fab', 'linkedin']" />
-        </i>
-        <a href="linkedin.com/in/jiapingzeng">jiapingzeng</a>
-      </li>
-    </ul>
   </div>
 </template>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+
 #contact {
   display: grid;
   place-items: center;
+  background-color: #dedede;
+  box-shadow: inset 0px 11px 8px -10px grey, inset 0px -11px 8px -10px grey;
 
-  ul {
-    padding: 0;
-    list-style: none;
+  .contact-card {
+    width: 500px;
+    height: 275px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
-    i {
-      color: $text-secondary;
-      margin: 0 0.5rem;
+    box-shadow: 0px 2px 4px #00000030;
+    transition: all 200ms ease-in-out;
+
+    .card-name-container {
+      grid-column: span 3;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      h3 {
+        font-family: Arvo;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 2em 1em 2em 0;
+        position: relative;
+      }
+
+      h3::after {
+        content: "";
+        position: absolute;
+        right: -18px;
+        top: 50%;
+        margin-top: -35px;
+        width: 3px;
+        height: 70px;
+        position: absolute;
+        background-color: $text-theme;
+      }
+    }
+
+    .card-info-container {
+      grid-column: span 2;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-family: Arvo;
+        grid-column: span 4;
+        margin: 0.2em;
+      }
+    }
+  }
+
+  .contact-card:hover {
+    box-shadow: 0px 10px 25px #00000050;
+    transform: translate3d(0px, -1px, 0px);
+  }
+
+  @media screen and (max-width: $media-break-small) {
+    .contact-card {
+      width: 325px;
+      height: 165px;
+    }
+
+    .card-name-container {
+      h3 {
+        font-size: 1.2rem !important;
+      }
+      h3::after {
+        width: 2px !important;
+        height: 50px !important;
+        margin-top: -25px !important;
+        right: -11px !important;
+      }
+    }
+
+    .card-info-container p {
+      font-size: 0.7rem !important;
     }
   }
 }

@@ -46,6 +46,16 @@ body {
     }
   }
 }
+
+/* utility classes */
+
+.hidden {
+  display: none !important;
+}
+
+.disabled {
+  pointer-events: none !important;
+}
 </style>
 
 <script>

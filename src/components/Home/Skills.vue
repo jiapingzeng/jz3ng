@@ -53,21 +53,31 @@
 <style lang="scss" scoped>
 #skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
-  width: 90%;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: $bg-secondary;
+  box-shadow: inset 0px 11px 8px -10px grey, inset 0px -11px 8px -10px grey;
 
   .section-title-container {
     grid-column: span 3;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    h3::after {
+      left: 0;
+      margin-left: 2px;
+    }
   }
 
   .skills-list {
-    grid-column: span 3;
+    grid-column: span 9;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px 50px;
+    grid-gap: 25px 50px;
+
+    div {
+      margin: 0 10px;
+    }
 
     i {
       svg {
@@ -80,8 +90,20 @@
   }
 
   @media screen and (max-width: $media-break) {
+    .section-title-container {
+      grid-column: span 12;
+      margin-left: 0;
+      justify-content: center;
+
+      h3::after {
+        left: 50%;
+        margin-left: -25px;
+      }
+    }
+
     .skills-list {
-      grid-gap: 0;
+      grid-column: span 12;
+      grid-gap: 10px;
 
       div {
         grid-column: span 2;

@@ -4,7 +4,7 @@
     <About />
     <Skills />
     <Projects class="hidden" />
-    <Hobbies class="hidden" />
+    <Hobbies />
     <Contact />
   </div>
 </template>
@@ -13,17 +13,17 @@
 .home {
   display: grid;
   place-items: center;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .home > div:not(:first-child) {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px 0 40px 0;
-  padding: 0 5%;
-}
+  width: 100%;
+  padding: 40px 0;
 
-.hidden {
-  display: none !important;
+  > * {
+    margin: 0 25px;
+  }
 }
 
 .section-title {
@@ -43,8 +43,7 @@
   bottom: -10px;
   left: 50%;
   margin-left: -25px;
-  background-color: $text-theme-secondary;
-  z-index: -1;
+  background-color: $text-theme;
 }
 
 .subsection-title {
