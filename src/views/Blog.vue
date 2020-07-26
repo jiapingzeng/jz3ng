@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="blog">
+    <h1>Under construction!</h1>
   </div>
 </template>
+
+<style lang="scss">
+.blog {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+}
+</style>

@@ -37,7 +37,7 @@
           <fa-icon :icon="['fas', 'users']" />
         </i>
         <h5 class="subsection-title">Teamwork</h5>
-        <p>I work well both alone and in collaboration. In addition to working with a team at ServiceNow, I have received awards at multiple team hacakathons.</p>
+        <p>I work well both alone and in collaboration. In addition to working with a team at ServiceNow on critical projects, I have received awards at multiple team hackathons.</p>
       </div>
       <div>
         <i>

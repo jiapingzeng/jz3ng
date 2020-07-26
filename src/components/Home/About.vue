@@ -57,7 +57,7 @@
     img {
       width: 70%;
       max-width: 280px;
-      border: 3px black solid;
+      border: 3px $text-primary solid;
       border-radius: 50%;
     }
   }
