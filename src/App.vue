@@ -8,6 +8,8 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+
 :root {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -23,10 +25,17 @@ body {
 #app {
   main {
     margin-left: 16rem;
+    a {
+      text-decoration: none;
+      color: $text-theme;
+    }
+    a:hover {
+      color: $text-theme-secondary;
+    }
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $media-break) {
   #main-navbar {
     display: none;
   }
