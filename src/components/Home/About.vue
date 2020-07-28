@@ -26,8 +26,8 @@
         <p>
           I am fluent in many programming languages, most notably Javascript, Java and C/C++. I have projects both from classes and outside of classes.
           <a
-            href="#projects"
-          >Check them out!</a>
+            href="https://github.com/jiapingzeng"
+          >Check out my GitHub!</a>
         </p>
       </div>
       <div>
@@ -35,7 +35,7 @@
         <p>
           I am a hands-on learner and love finding personal projects in my spare time. My most recent project is a DIY electric skateboard that goes up to 35 miles per hour.
           <a
-            href="#hobbies"
+            href="#projects"
           >Read more about my hobbies!</a>
         </p>
       </div>
@@ -46,8 +46,8 @@
 <style lang="scss" scoped>
 #about {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 25px;
 
   .about-picture {
     grid-column: span 1;
@@ -56,7 +56,7 @@
 
     img {
       width: 70%;
-      max-width: 280px;
+      max-width: 250px;
       border: 1px white solid;
       box-shadow: 0 0 10px lightgrey;
       border-radius: 50%;
@@ -64,7 +64,7 @@
   }
 
   .about-tldr {
-    grid-column: span 2;
+    grid-column: span 1;
 
     h4 {
       text-transform: uppercase;
@@ -81,11 +81,11 @@
   }
 
   .about-text {
-    grid-column: span 3;
+    grid-column: span 2;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 25px;
+    column-gap: 25px;
 
     div {
       margin: 0 10px;

@@ -63,6 +63,10 @@
     align-items: center;
     width: 100%;
 
+    h3 {
+      margin-left: 10px;
+    }
+
     h3::after {
       left: 0;
       margin-left: 2px;
@@ -76,7 +80,7 @@
     grid-gap: 25px 50px;
 
     div {
-      margin: 0 10px;
+      margin: 0 25px;
     }
 
     i {

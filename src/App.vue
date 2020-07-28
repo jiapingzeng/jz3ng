@@ -36,10 +36,6 @@ body {
 }
 
 @media screen and (max-width: $media-break) {
-  #main-navbar {
-    display: none;
-  }
-
   #app {
     main {
       margin: 0;

@@ -22,11 +22,6 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="#hobbies" class="nav-link">
-          <span class="link-text">Hobbies</span>
-        </a>
-      </li>
-      <li class="nav-item">
         <a href="#contact" class="nav-link">
           <span class="link-text">Contact</span>
         </a>
@@ -148,7 +143,13 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: $media-break) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $media-break) {
   .navbar {
     top: 0;
     width: 16rem;

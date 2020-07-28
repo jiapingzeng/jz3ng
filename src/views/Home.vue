@@ -3,9 +3,12 @@
     <Intro class="hidden" />
     <About />
     <Skills />
-    <Projects class="hidden" />
-    <Hobbies />
+    <Projects />
     <Contact />
+    <p>
+      This website is designed and coded from scratch by me. If you like the style,
+      <a href="https://github.com/jiapingzeng/jz3ng">check out my source code</a> and feel free to use any part of it!
+    </p>
   </div>
 </template>
 
@@ -15,6 +18,11 @@
   place-items: center;
   max-width: 1600px;
   margin: auto;
+
+  > p {
+    margin: 1em 2em;
+    text-align: center;
+  }
 }
 
 .home > div:not(:first-child) {
@@ -59,7 +67,6 @@ import Intro from "@/components/Home/Intro.vue";
 import About from "@/components/Home/About.vue";
 import Skills from "@/components/Home/Skills.vue";
 import Projects from "@/components/Home/Projects.vue";
-import Hobbies from "@/components/Home/Hobbies.vue";
 import Contact from "@/components/Home/Contact.vue";
 
 import "vue2-animate/dist/vue2-animate.min.css";
@@ -71,7 +78,6 @@ export default {
     About,
     Skills,
     Projects,
-    Hobbies,
     Contact,
   },
 };
