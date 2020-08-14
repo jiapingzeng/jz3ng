@@ -16,12 +16,24 @@
       <div class="project-card">
         <img src="@/assets/projects/lamp.jpg" />
         <div class="card-description">
-          <h5>Smart printed lamp</h5>
+          <h5>Printed smart lamp</h5>
           <p>
             This is a simple lamp that I designed and printed.
             <a
               href="https://www.thingiverse.com/thing:4376484"
             >Download it here!</a>
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="@/assets/projects/3d-alphabet.jpg" />
+        <div class="card-description">
+          <h5>Overpass 3D alphabet</h5>
+          <p>
+            I made these alphanumeric 3D models in Overpass font for a friend's project.
+            <a
+              href="https://www.thingiverse.com/thing:4565039"
+            >Download them here!</a>
           </p>
         </div>
       </div>
@@ -56,7 +68,10 @@
     </div>
     <div class="section-description">
       <h5 class="subsection-title">Software</h5>
-      <p>I also love building software projects spontaneously in my free time (especially web-related). Check out my <a href="https://github.com/jiapingzeng">GitHub</a> for more of these!</p>
+      <p>
+        I also love building software projects spontaneously in my free time (especially web-related). Check out my
+        <a href="https://github.com/jiapingzeng">GitHub</a> for more of these!
+      </p>
     </div>
     <div class="section-list">
       <div class="project-card">
@@ -105,6 +120,7 @@
       width: 300px;
       height: 350px;
       box-shadow: 0px 2px 4px #00000030;
+      border-radius: 6px;
       position: relative;
       overflow: hidden;
 
@@ -127,7 +143,7 @@
         width: 250px;
         margin: 0;
         padding: 5px 25px;
-        background-color: #fffffff4;
+        background-color: #ffffffeb;
         height: 60px;
         transition: height 300ms;
 

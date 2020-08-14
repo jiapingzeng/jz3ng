@@ -12,7 +12,7 @@
         <li>Skilled in JavaScript, Java, C/C++ and Python</li>
         <li>Always up for a challenge</li>
         <li>
-          <a :href="resumeLink" target="_blank">Resume</a>
+          <a :href="resumeLink" target="_blank">Resume</a> (PDF)
         </li>
       </ul>
     </div>
