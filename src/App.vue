@@ -61,5 +61,10 @@ export default {
   components: {
     Navbar,
   },
+  mounted() {
+    [...document.links].map((l) => {
+      if (l.host !== location.host) l.target = "_blank";
+    });
+  },
 };
 </script>
