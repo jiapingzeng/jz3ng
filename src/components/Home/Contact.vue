@@ -9,7 +9,7 @@
           <p>Palo Alto, California</p>
           <p>(650) 665-0255</p>
           <p>
-            <a href="mailto://me@jz3ng.com">me@jz3ng.com</a>
+            <a href="mailto://jzeng@outlook.com">jzeng@outlook.com</a>
           </p>
         </div>
       </div>
